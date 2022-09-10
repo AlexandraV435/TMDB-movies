@@ -45,6 +45,16 @@ body {
 .head-two {
   margin-left: 90px
 }
+
+.up {
+  background: rgba(0, 0, 0, .7);
+  position: relative;
+  z-index: 2;
+  width: 920px;
+  border-radius: 3px;
+  height: 580px;
+}
+
 .background {
   background: rgba(0, 0, 0, .7);
   position: absolute;
@@ -52,10 +62,10 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
   height: 100%;
   box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
 }
+
 #overview {
   margin-top: -30px;
   font-family: Lato-light;
@@ -63,7 +73,7 @@ body {
 }
 
 @media screen and (max-width: 756px) {
-  * {
+  body {
     overflow-x: hidden;
   }
   #overview {
@@ -80,17 +90,6 @@ body {
     margin-bottom: 22px;
     position: relative;
     z-index: 2
-  }
-
-  .background {
-    background: rgba(0, 0, 0, .7);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
   }
 
   .wrapper {
@@ -121,7 +120,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 900px;
+    width: 100%;
+    overflow-x: hidden;
     height: 210%;
     box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
   }
