@@ -14,6 +14,12 @@ font-family: "Lato-light";
 src: url("Lato-Light.ttf") format("truetype");
 }
 
+.main-populars {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background: #22254b;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -76,6 +82,13 @@ body {
   body {
     overflow-x: hidden;
   }
+
+  .main-populars {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #22254b;
+  }
+
   #overview {
     margin-top: -30px;
     font-family: Lato-light;
