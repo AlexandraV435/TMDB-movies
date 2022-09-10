@@ -1,0 +1,62 @@
+$lightGreen: #00FC87;
+
+@import "main.scss";
+@import "search.scss";
+@import "header.scss";
+
+@font-face {
+font-family: "OsLight";
+src: url("Oswald-Light.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Lato-light";
+src: url("Lato-Light.ttf") format("truetype");
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#img {
+  width: 910px;
+  height: 580px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 756px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+
+  #img {
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    border-radius: 3px;
+  }
+  .up {
+    background: rgba(0, 0, 0, .7);
+    position: relative;
+    z-index: 2;
+    width: 820px;
+    border-radius: 3px;
+    height: 210%;
+  }
+
+  .background {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 210%;
+    box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
+  }
+}
