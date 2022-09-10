@@ -1,14 +1,3 @@
-body {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  font-family: OsLight;
-  font-weight: 200;
-  overflow-x: hidden;
-}
-.head-two {
-  margin-left: 90px
-}
-
 #prod {
   margin-top: -20px;
 }
@@ -28,14 +17,6 @@ body {
   font-stretch: condensed;
 }
 
-#tmdb {
-  width: 140px;
-  height: 55px;
-  margin-left: 18vw;
-  margin-bottom: 22px;
-  position: relative;
-  z-index: 2
-}
 
 #img {
   width: 910px;
@@ -45,12 +26,6 @@ body {
 
 #main {
   margin: 0 auto;
-}
-
-#overview {
-  margin-top: -30px;
-  font-family: Lato-light;
-  line-height: 1.5;
 }
 
 #genre {

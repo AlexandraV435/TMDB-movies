@@ -14,7 +14,6 @@ const up = document.getElementById('up');
 const background = document.getElementById('background');
 const overview = document.getElementById('overview')
 
-//alert(window.innerWidth)
 let genre = [];
 let prod_comp = [];
 
@@ -70,7 +69,7 @@ function showMovies(data) {
            <div id="overview">
              <p class='text'>${data.overview}</p>
            </div>
-           <div>
+           <div class='div'>
            <p class='film' id='genre'>${genre}</p>
            <p class='text' id='prod'>${prod_comp}</p>
            </div>

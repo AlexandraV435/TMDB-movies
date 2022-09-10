@@ -13,6 +13,22 @@ src: url("Oswald-Light.ttf") format("truetype");
 font-family: "Lato-light";
 src: url("Lato-Light.ttf") format("truetype");
 }
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: OsLight;
+  font-weight: 200;
+  overflow-x: hidden;
+}
+
+#tmdb {
+  width: 140px;
+  height: 55px;
+  margin-left: 18vw;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2
+}
 
 .wrapper {
   display: flex;
@@ -25,7 +41,54 @@ src: url("Lato-Light.ttf") format("truetype");
   border-radius: 3px;
 }
 
+.head-two {
+  margin-left: 90px
+}
+.background {
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
+}
+#overview {
+  margin-top: -30px;
+  font-family: Lato-light;
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 756px) {
+  #overview {
+    margin-top: -30px;
+    font-family: Lato-light;
+    line-height: 1.5;
+    margin: 5px;
+  }
+
+  #tmdb {
+    width: 140px;
+    height: 55px;
+    margin-left: 1vw;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 2
+  }
+
+  .background {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 820px;
+    height: 100%;
+    box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
+  }
 
   .wrapper {
     display: flex;
@@ -55,8 +118,12 @@ src: url("Lato-Light.ttf") format("truetype");
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 900px;
     height: 210%;
     box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
+  }
+
+  .head-two {
+    margin-left: 50px
   }
 }
