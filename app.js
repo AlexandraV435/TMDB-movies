@@ -21,31 +21,28 @@ getMovie(URL);
 
 function getFilmSearch(id) {
   getMovie(DEF_URL + id + '?&' + API_KEY )
-  console.log(this)
 }
 
 function getMovie(url) {
   fetch(url).then(res => res.json()).then(data => {
     showMovies(data);
   })
-  console.log(this)
 }
 
 function getMovies(url) {
   fetch(url).then(res => res.json()).then(data => {
     showResults(data.results);
   })
-  console.log(this)
 }
 
 function getFilms(url) {
   fetch(url).then(res => res.json()).then(data => {
     getPopFilms(data.results);
   })
-  console.log(this)
 }
 
 function showMovies(data) {
+
   genre = [];
   let genres = data.genres;
   genres.forEach(item => {
@@ -150,7 +147,7 @@ function getPopFilms(data) {
         <div class="movie-info">
           <h3>${title}</h3>
             <div class='wrapp-span'>
-              <span class="${getColor(vote_average)} vote">${vote_average}</span>
+              <span class="${getColor(vote_average)} vote">${vote_average.toFixed(1)}</span>
           </div>
         </div>
       </div>
