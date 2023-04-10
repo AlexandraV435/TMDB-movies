@@ -25,7 +25,6 @@ body {
   background-size: 100%;
   font-family: OsLight;
   font-weight: 200;
-  overflow-x: hidden;
 }
 
 #tmdb {
@@ -69,7 +68,7 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);;
+  box-shadow: inset 0px 143px 54px -26px rgba(0,0,0,0.59), inset 0px -133px 61px -33px rgba(0,0,0,0.59);
 }
 
 #overview {
@@ -81,7 +80,8 @@ body {
 @media screen and (max-width: 756px) {
   body {
     overflow-x: hidden;
-    background: black
+    background: black;
+    
   }
 
   .main-populars {
@@ -119,7 +119,7 @@ body {
     border-radius: 3px;
   }
   .up {
-    background: rgba(0, 0, 0, .7);
+    background: black;
     position: relative;
     z-index: 2;
     width: 100%;

@@ -1,9 +1,9 @@
-#prod {
-  margin-top: -20px;
+*{
+  margin: 0;
+  padding: 0;
 }
 
 #tagline {
-  margin-top: -20px;
   font-size: 22px;
   font-weight: 200;
 }
@@ -17,6 +17,12 @@
   font-stretch: condensed;
 }
 
+.movie-info h3 {
+  height: 50px;
+}
+
+.w
+
 #main {
   margin: 0 auto;
 }
@@ -29,8 +35,8 @@
   color: #fafafa;
 }
 
-.headings-const {
-  margin-top: -10px;
+#overview .text {
+  margin-top: 30px;
 }
 
 .headings {
@@ -38,7 +44,6 @@
 }
 
 .film-id {
-  margin-top: -17px;
   font-size: 26px;
 }
 
@@ -161,6 +166,8 @@ body {
   font-family: OsLight;
   font-weight: 200;
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 #tmdb {
@@ -199,11 +206,8 @@ body {
 .background {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: 100%;
+  width: 100%;
   box-shadow: inset 0px 143px 54px -26px rgba(0, 0, 0, 0.59), inset 0px -133px 61px -33px rgba(0, 0, 0, 0.59);
 }
 
@@ -214,6 +218,9 @@ body {
 }
 
 @media screen and (max-width: 756px) {
+  #overview .text {
+    margin-top: 0
+  }
   body {
     overflow-x: hidden;
     background: black;
@@ -226,7 +233,7 @@ body {
   }
 
   #overview {
-    margin-top: -30px;
+    margin-top: -100px;
     font-family: Lato-light;
     line-height: 1.5;
     margin: 5px;
@@ -255,7 +262,7 @@ body {
   }
 
   .up {
-    background: rgba(0, 0, 0, 0.7);
+    background: black;
     position: relative;
     z-index: 2;
     width: 100%;

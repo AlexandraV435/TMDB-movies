@@ -21,25 +21,28 @@ getMovie(URL);
 
 function getFilmSearch(id) {
   getMovie(DEF_URL + id + '?&' + API_KEY )
-
+  console.log(this)
 }
 
 function getMovie(url) {
   fetch(url).then(res => res.json()).then(data => {
     showMovies(data);
   })
+  console.log(this)
 }
 
 function getMovies(url) {
   fetch(url).then(res => res.json()).then(data => {
     showResults(data.results);
   })
+  console.log(this)
 }
 
 function getFilms(url) {
   fetch(url).then(res => res.json()).then(data => {
     getPopFilms(data.results);
   })
+  console.log(this)
 }
 
 function showMovies(data) {
@@ -103,7 +106,7 @@ function showMovies(data) {
     main.classList.add('up');
     main.appendChild(movieEl)
     body.style.backgroundImage = `url(${IMG_URL+data.backdrop_path})`;
-
+    console.log(this)
 }
 
 function showResults(results) {
@@ -131,6 +134,7 @@ function showResults(results) {
       body.style.backgroundImage = '';
 
   });
+  console.log(this)
 }
 
 function getPopFilms(data) {
@@ -158,6 +162,7 @@ function getPopFilms(data) {
     main.appendChild(movieEl);
     body.style.backgroundImage = '';
     });
+    console.log(this)
 }
 
 function getColor(vote) {
@@ -166,6 +171,7 @@ function getColor(vote) {
   } else if (vote >= 5.5) {
     return 'orange'
   } else return 'red'
+  console.log(this)
 }
 
 form.addEventListener('submit', (e) => {
@@ -178,4 +184,5 @@ form.addEventListener('submit', (e) => {
   } else {
     getMovies(URL);
   }
+  console.log(this)
 })
